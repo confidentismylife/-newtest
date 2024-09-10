@@ -1,0 +1,106 @@
+.text-gradient {
+    background: linear-gradient(90deg, #1E90FF, #00BFFF); /* 渐变颜色 */
+    -webkit-background-clip: text; /* 使背景颜色裁剪为文本 */
+    -webkit-text-fill-color: transparent; /* 使文本填充颜色透明 */
+    background-clip: text; /* 非 Webkit 浏览器 */
+    text-fill-color: transparent; /* 非 Webkit 浏览器 */
+  }
+  /* index.css */
+/* index.css */
+@keyframes slideUpFromBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(100px); /* 从底部开始 */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* 结束时在原位置 */
+    }
+  }
+  
+  .slide-up-from-bottom {
+    animation: slideUpFromBottom 1s ease-out forwards;
+  }
+
+ /* index.css */
+
+/* 默认样式 */
+.container {
+  padding: 0 2rem;
+}
+
+
+/* 移动端样式 */
+@media (max-width: 768px) {
+  .container {
+      padding: 0 1rem;
+  }
+
+  .text-4xl {
+      font-size: 1.5rem;
+  }
+
+  .text-6xl {
+      font-size: 2rem;
+  }
+
+  .text-9xl {
+      font-size: 2.5rem;
+  }
+
+  .text-yellow-500 {
+      color: #facc15;
+  }
+
+  .text-red-500 {
+      color: #ef4444;
+  }
+
+  .slide-up-from-bottom {
+      animation: slideUp 1s ease-out;
+  }
+
+  @keyframes slideUp {
+      0% {
+          transform: translateY(20px);
+          opacity: 0;
+      }
+      100% {
+          transform: translateY(0);
+          opacity: 1;
+      }
+  }
+}
+/* index.css */
+
+/* 默认样式 */
+.header-link {
+  font-size: 1.25rem; /* 默认字体大小 */
+}
+
+/* 移动端样式 */
+@media (max-width: 768px) {
+  .header-link {
+      font-size: 1rem; /* 移动端字体大小 */
+  }
+}
+/* index.css */
+
+/* 移动端菜单样式 */
+/* 移动端菜单样式 */
+#mobile-menu {
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    border-radius: 0 0 8px 8px;
+    padding: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#mobile-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #4a5568;
+}

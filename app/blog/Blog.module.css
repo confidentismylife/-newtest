@@ -1,0 +1,14 @@
+/* Blog.module.css */
+.background {
+    background-color: #fef3c7; /* Tailwind's bg-orange-100 equivalent */
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+  
+  /* Dark mode */
+  @media (prefers-color-scheme: dark) {
+    .background {
+      background-color: #2d3748; /* Tailwind's dark:bg-gray-800 equivalent */
+    }
+  }
+  

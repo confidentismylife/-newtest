@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+  }
+}
+
+/* 应用全局样式 */
+body {
+  color: rgb(var(--foreground-rgb));
+  margin: 0; /* 清除默认的外边距 */
+  padding: 0; /* 清除默认的内边距 */
+  box-sizing: border-box; /* 包括边框和内边距在元素的总宽度和高度中 */
+}
+
+/* 全局重置所有元素的样式 */
+*, *::before, *::after {
+  box-sizing: inherit; /* 确保所有元素都继承 box-sizing */
+  margin: 0; /* 清除默认的外边距 */
+  padding: 0; /* 清除默认的内边距 */
+  border: 0; /* 清除默认的边框 */
+}
+
+/* 其他全局样式 */
+a {
+  text-decoration: none; /* 清除链接下划线 */
+  color: inherit; /* 继承颜色 */
+}
+
+ul, ol {
+  list-style: none; /* 清除列表项符号 */
+}
+
+/* 对表单元素进行重置 */
+input, textarea, button {
+  border: 0; /* 清除默认的边框 */
+  background: none; /* 清除默认背景 */
+  outline: none; /* 清除焦点轮廓 */
+}
+
+/* 解决某些浏览器的默认样式 */
+img, video {
+  max-width: 100%; /* 使媒体元素不会超出父元素的宽度 */
+  height: auto; /* 保持比例 */
+}
+.react-grid-item.react-grid-placeholder {
+  background: gray;
+  transition-duration: 300ms;
+  border-radius: 1.5rem;
+  z-index: 0;
+}
+
+.react-grid-item {
+  transition-duration: 800ms;
+}
+
+.mapboxgl-control-container {
+  display: none !important;
+}
+
+.medium-zoom-image {
+  border-radius: 2rem;
+}
+
+.notion-code {
+  border-radius: 1rem;
+}
+
+.notion-code-copy-button {
+  display: none;
+}
+
+iframe.notion-asset-object-fit {
+  background-color: transparent;
+  border-radius: 1rem;
+}
+
+.video-stream html5-main-video {
+  border-radius: 1rem;
+  background-color: transparent;
+}
+
+.notion-yt-lite {
+  border-radius: 1rem;
+  background-color: transparent;
+}
